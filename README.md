@@ -1,11 +1,7 @@
-# Dracos Custom
+# Custom
 
-## How do I install these formulae?
+## How do I install these?
 
-`brew install dracos/custom/<formula>`
+`brew install dracos/custom/dracos-manager`
 
-Or `brew tap dracos/custom` and then `brew install <formula>`.
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Or `brew tap dracos/custom` and then `brew install dracos-manager`.
