@@ -1,20 +1,17 @@
 cask "dracos-manager" do
   arch arm: "arm64", intel: "x64"
 
-  version "22.8.17.299"
+  version "26.6.17.3647"
+  sha256 arm:   "334a714e2de4e36a01cca5cfc27ae49875c370853285e583ec04fd329b35b597",
+         intel: "38ac2b30fea1417c11d785643c066b604e49c587596515ebe1c2e94b406622d2"
 
-  on_intel do
-    sha256 "3471e532709c72421155f0bcaf96840f8d266df24cc29ed801bb2feaa0368234"
-  end
-  on_arm do
-    sha256 "5208301718e3d1769b1f95b7168fb5881239bd6e660ff69e41299aebb10c9a39"
-  end
-
-  url "https://github.com/Manager-io/Manager/releases/download/#{version}/Manager-osx-#{arch}.dmg",
-      verified: "github.com/Manager-io/Manager"
+  url "https://github.com/Manager-io/Manager/releases/download/#{version}/Manager-#{arch}.dmg",
+      verified: "github.com/Manager-io/Manager/"
   name "dracos-manager"
   desc "Free accounting software for small business"
   homepage "https://manager.io/"
+
+  depends_on :macos
 
   app "Manager.app"
 end
